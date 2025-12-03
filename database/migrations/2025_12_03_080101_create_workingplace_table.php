@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('workingplace', function (Blueprint $table) {
             $table->id();
+            $table->string('fromplace')->nullable();
+            $table->string('toplace')->nullable();
+            $table->integer('km')->nullable();
+            $table->integer('expense')->nullable();
             $table->timestamps();
         });
     }
