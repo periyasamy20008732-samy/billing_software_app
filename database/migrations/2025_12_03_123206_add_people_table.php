@@ -6,16 +6,13 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
+
     public function up(): void
     {
         //
         Schema::table('people', function (Blueprint $table) {
             $table->string('delete_at')->nullable();
         });
-        
     }
 
     /**
@@ -26,7 +23,6 @@ return new class extends Migration
         //
         Schema::table('people', function (Blueprint $table) {
             $table->string('delete_at')->nullable();
-        }); 
-        
+        });
     }
 };
