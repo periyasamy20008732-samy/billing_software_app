@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
 Route::get('/pricing', function () {
     return view('pricing');
 });
@@ -19,3 +20,4 @@ Route::get('/partner-program', function () {
 Route::get('/contact-us', function () {
     return view('contact');
 });
+
